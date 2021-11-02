@@ -1,4 +1,6 @@
 public class Path {
+    
+    // 교재 입력 데이터 (Figure 3.2)
     static int[][] PP = new int[][] {
         {0, 0, 4, 0, 4},
         {5, 0, 0, 0, 4},
@@ -6,6 +8,8 @@ public class Path {
         {5, 5, 0, 0, 0},
         {0, 1, 4, 1, 0}
     };
+
+    // 임의의 자작 데이터
     static int[][] P = new int[][] {
         {0,0,6,6,6,0},
         {0,0,6,6,0,1},
