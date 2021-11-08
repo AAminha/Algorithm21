@@ -1,6 +1,10 @@
 public class MinMult {
-    static int n = 6;
-    final static int[] d = {5, 2, 3, 4, 6, 7, 8};
+    // 교재의 입력 데이터 (Example 3.5)
+    final static int[] dd = {5, 2, 3, 4, 6, 7, 8};
+
+    // 임의의 자작 입력 데이터
+    final static int[] d = {3, 8, 5, 4, 3, 2, 6, 4};
+    static int n = d.length-1;
     static int[][] P = new int[n][n+1];
 
     public static int minimum(int a, int b) {
@@ -47,6 +51,14 @@ public class MinMult {
         }
         System.out.println(M[1][n]);
 
-        order(1, 6);
+        order(1, 7);
+        System.out.println();
+
+        for (int a = 1; a < P.length; a++) {
+            for (int b = 1; b < P[a].length; b++) {
+                System.out.print(P[a][b] + " ");
+            }
+            System.out.println();
+        }
     }
 }
